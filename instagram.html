@@ -1,0 +1,248 @@
+      {/* ── INSTAGRAM ── */}
+      <section className="px-6 py-20 border-t border-zinc-800 relative overflow-hidden max-w-6xl mx-auto">
+        <div
+          className="absolute top-0 left-0 right-0 h-px"
+          style={{
+            background:
+              "linear-gradient(90deg,transparent,#cc2200,transparent)",
+          }}
+        />
+
+        <div className="reveal opacity-0 translate-y-7 transition-all duration-700">
+          <LabelRow text="Follow The Work" />
+          <h2 className="text-5xl md:text-8xl font-light leading-none tracking-tight mb-4"
+            style={{
+              fontFamily: fonts.display
+            }}
+          >
+            Behind The Scenes.
+            <br />
+            <em
+              className="font-serif"
+              style={{ fontStyle: "italic", color: "#e03010" }}
+            >
+              In Real Time.
+            </em>
+          </h2>
+          <p className="text-zinc-400 text-sm leading-relaxed mb-7 max-w-md">
+            The strategy, the breakdowns, the work in progress. We post what
+            actually moves the needle — not motivational filler.
+            <br />
+            <br />
+            Follow along to see how we think, what we build, and what we're
+            working on right now.
+          </p>
+        </div>
+
+        {/* Profile */}
+        <div className="reveal opacity-0 translate-y-7 transition-all duration-700 delay-100 flex items-center gap-3 p-5 bg-zinc-900 border border-zinc-800 mb-0.5">
+          <div className="w-12 h-12 rounded-full bg-zinc-800 border-2 border-red-700 flex items-center justify-center flex-shrink-0">
+            <svg viewBox="0 0 40 40" width="40" height="40">
+              <text
+                x="4"
+                y="28"
+                fontFamily="Georgia"
+                fontSize="18"
+                fontWeight="700"
+                fill="#e8e0d5"
+              >
+                AT
+              </text>
+            </svg>
+          </div>
+          <div className="flex-1">
+            <p className="text-stone-200 text-sm font-semibold tracking-wide mb-1">
+              @atmediaproduction
+            </p>
+            <div className="flex gap-3 text-zinc-500 text-[9px] tracking-[1.5px] uppercase">
+              <span>3 Posts</span>
+              <span>4 Followers</span>
+              <span>Growing →</span>
+            </div>
+          </div>
+          <div className="flex items-center gap-1.5 text-green-400 text-[8px] tracking-[2px] uppercase">
+            <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+            Active
+          </div>
+        </div>
+
+        {/* Grid */}
+        <div className="reveal opacity-0 translate-y-7 transition-all duration-700 delay-200">
+          <div className="grid grid-cols-3 gap-0.5 mb-0">
+            {igPosts.map((p, i) => (
+              <div
+                key={i}
+                className="relative overflow-hidden cursor-pointer group"
+                style={{ aspectRatio: "1" }}
+                onClick={() =>
+                  window.open(
+                    "https://instagram.com/atmediaproduction",
+                    "_blank",
+                  )
+                }
+              >
+                <div className="w-full h-full flex items-center justify-center">
+                  {p.content}
+                </div>
+                <div className="absolute inset-0 bg-black/65 flex flex-col items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span className="text-white text-xs tracking-wide">
+                    ♥ {p.likes}
+                  </span>
+                </div>
+                <span className="absolute top-2 right-2 bg-black/70 text-white text-[8px] tracking-[1px] uppercase px-1.5 py-0.5">
+                  {p.type}
+                </span>
+              </div>
+            ))}
+          </div>
+          <div className="py-3 px-4 bg-zinc-900 border border-zinc-800 border-t-0 text-center">
+            <span className="text-zinc-500 text-[9px] tracking-[2.5px] uppercase">
+              3 posts. More coming. Stay close.
+            </span>
+          </div>
+        </div>
+
+        <div className="reveal opacity-0 translate-y-7 transition-all duration-700 delay-300 flex flex-wrap gap-3 mt-7">
+          <BtnRed href="https://instagram.com/atmediaproduction">
+            Follow @atmediaproduction
+          </BtnRed>
+          <BtnOutline href="https://instagram.com/atmediaproduction">
+            DM "Growth" on Instagram →
+          </BtnOutline>
+        </div>
+      </section>
+
+      {/* ── TANTRAS ── */}
+      <section className="py-20 border-t border-zinc-800 bg-zinc-900 relative overflow-hidden ">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 40% at 80% 50%,rgba(204,34,0,.06),transparent 70%)",
+          }}
+        />
+
+        <div className="px-6 relative z-10 max-w-6xl mx-auto">
+          <div className="reveal opacity-0 translate-y-7 transition-all duration-700">
+            <LabelRow text="Client Spotlight" />
+            <h2 className="text-5xl md:text-8xl font-light leading-none tracking-tight mb-4"
+              style={{
+                fontFamily: fonts.display
+              }}
+            >
+              This Is What
+              <br />
+              <em
+                className="font-serif"
+                style={{ fontStyle: "italic", color: "#e03010" }}
+              >
+                We Built.
+              </em>
+            </h2>
+            <p className="text-zinc-400 text-sm leading-relaxed max-w-md mb-0">
+              @the.tantras is a brand we manage. Navdeep covers Ancient Tantra,
+              Mystical Wisdom, and the unseen side of Sanatan Dharma.
+              <br />
+              <br />
+              <strong className="text-stone-200 font-medium">
+                We handle the content system. He handles the knowledge. The
+                result speaks for itself.
+              </strong>
+            </p>
+          </div>
+
+          {/* Big stat */}
+          <div className="reveal opacity-0 translate-y-7 transition-all duration-700 delay-100 border-l-4 border-red-700 pl-6 my-10 max-w-6xl mx-auto">
+            <span
+              className="font-serif font-bold text-stone-200 leading-none block mb-2"
+              style={{ fontSize: "clamp(56px,16vw,100px)" }}
+            >
+              15<span className="text-red-500">.6K</span>
+            </span>
+            <span className="text-zinc-500 text-xs tracking-[3px] uppercase">
+              ❤ Likes on a single reel · 4,054 followers · 182 posts
+            </span>
+          </div>
+        </div>
+
+        {/* Managed bar */}
+        <div
+          className="reveal opacity-0 translate-y-7 transition-all duration-700 delay-100 flex items-center gap-3 px-6 py-3.5 mb-10 max-w-6xl mx-auto"
+          style={{
+            background: "rgba(204,34,0,0.12)",
+            borderTop: "1px solid rgba(204,34,0,.2)",
+            borderBottom: "1px solid rgba(204,34,0,.2)",
+          }}
+        >
+          <span className="text-red-600 text-[9px] tracking-[3px] uppercase">
+            ✦ Managed by AT Media Productions
+          </span>
+          <span className="text-stone-200 text-[11px] font-semibold tracking-wide ml-auto">
+            @the.tantras →
+          </span>
+        </div>
+
+        <p className="text-zinc-500 max-w-6xl mx-auto text-[9px] tracking-[3px] uppercase px-6 mb-3 reveal opacity-0 translate-y-7 transition-all duration-700 delay-200">
+          Content We Produce
+        </p>
+
+        {/* Tantras grid */}
+        <div className="reveal opacity-0 translate-y-7 transition-all duration-700 delay-200 grid grid-cols-3 gap-0.5 mb-10 max-w-6xl mx-auto">
+          {tgPosts.map((p, i) => (
+            <div
+              key={i}
+              className="relative overflow-hidden cursor-pointer group"
+              style={{ aspectRatio: "1", background: p.bg }}
+              onClick={() =>
+                window.open("https://instagram.com/the.tantras", "_blank")
+              }
+            >
+              <div className="w-full h-full flex items-end justify-start p-2.5">
+                {p.label}
+              </div>
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-2.5"
+                style={{
+                  background:
+                    "linear-gradient(to top,rgba(0,0,0,.8),transparent 60%)",
+                }}
+              >
+                <span className="text-white text-[9px] tracking-[1px] uppercase leading-tight">
+                  {p.caption}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Results */}
+        <div className="px-6 relative z-10 max-w-6xl mx-auto">
+          <div className="reveal opacity-0 translate-y-7 transition-all duration-700 delay-200 mb-9">
+            {results.map((r) => (
+              <div
+                key={r.n}
+                className="flex items-start gap-4 py-4 border-b border-zinc-800 first:border-t first:border-zinc-800"
+              >
+                <span className="text-red-600 text-[10px] tracking-[1px] min-w-[24px] pt-0.5">
+                  {r.n}
+                </span>
+                <div>
+                  <p className="text-stone-200 text-[13px] font-medium mb-0.5">
+                    {r.title}
+                  </p>
+                  <p className="text-zinc-500 text-xs leading-relaxed">
+                    {r.sub}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="reveal opacity-0 translate-y-7 transition-all duration-700 delay-300 flex flex-wrap gap-3">
+            <BtnRed href="https://instagram.com/the.tantras">
+              See @the.tantras →
+            </BtnRed>
+            {/* <BtnOutline href="#">Work With Us Like This</BtnOutline> */}
+          </div>
+        </div>
+      </section>
