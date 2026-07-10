@@ -126,14 +126,14 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    // apple: "/apple-touch-icon.png",
   },
 
-  manifest: "/site.webmanifest",
+  // manifest: "/site.webmanifest",
 
-  verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
-  },
+  // verification: {
+  //   google: "YOUR_GOOGLE_VERIFICATION_CODE",
+  // },
 
   other: {
     "theme-color": "#000000",
