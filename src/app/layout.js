@@ -41,7 +41,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata = {
-  metadataBase: new URL("https://www.atmediaproductions.com"), // Replace with your actual domain
+  metadataBase: new URL("https://www.atmediaproduction.com"), // Replace with your actual domain
 
   title: {
     default: "AT Media Productions | Captivating Content Creation",
@@ -71,7 +71,7 @@ export const metadata = {
   authors: [
     {
       name: "AT Media Productions",
-      url: "https://www.atmediaproductions.com",
+      url: "https://www.atmediaproduction.com",
     },
   ],
 
@@ -93,14 +93,14 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "https://www.atmediaproductions.com",
+    canonical: "https://www.atmediaproduction.com",
   },
 
   openGraph: {
     title: "AT Media Productions | Captivating Content Creation",
     description:
       "Premium video production, photography, podcast production, branding, and social media content that helps businesses stand out.",
-    url: "https://www.atmediaproductions.com",
+    url: "https://www.atmediaproduction.com",
     siteName: "AT Media Productions",
     images: [
       {
@@ -114,14 +114,14 @@ export const metadata = {
     type: "website",
   },
 
-  twitter: {
-    card: "summary_large_image",
-    title: "AT Media Productions | Captivating Content Creation",
-    description:
-      "Premium video production, photography, podcast production, branding, and content creation.",
-    images: ["/og-image.png"],
-    creator: "@yourtwitterhandle", // Optional
-  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "AT Media Productions | Captivating Content Creation",
+  //   description:
+  //     "Premium video production, photography, podcast production, branding, and content creation.",
+  //   images: ["/og-image.png"],
+  //   creator: "@yourtwitterhandle", // Optional
+  // },
 
   icons: {
     icon: "/favicon.ico",
