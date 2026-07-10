@@ -41,12 +41,104 @@ const playfair = Playfair_Display({
 })
 
 export const metadata = {
-  title: 'AT Media Productions | Captivating Content Creation',
-  description:
-    'AT Media Productions is a dynamic media production company specializing in captivating content creation, including photography, videography, and social media management. With a passion for storytelling and a commitment to excellence, we bring your vision to life through stunning visuals and engaging narratives. Whether you need promotional videos, event coverage, or social media content, AT Media Productions delivers high-quality results that resonate with your audience and elevate your brand presence.',
-  image: '/atlogo.png',
+  metadataBase: new URL("https://www.atmediaproductions.com"), // Replace with your actual domain
 
-}
+  title: {
+    default: "AT Media Productions | Captivating Content Creation",
+    template: "%s | AT Media Productions",
+  },
+
+  description:
+    "AT Media Productions is a creative media production company specializing in premium video production, photography, podcast production, branding, social media management, and content creation that helps businesses and personal brands grow.",
+
+  keywords: [
+    "AT Media Productions",
+    "Video Production",
+    "Media Production Company",
+    "Content Creation",
+    "Podcast Production",
+    "Video Editing",
+    "Photography",
+    "Graphic Design",
+    "Branding",
+    "Social Media Management",
+    "YouTube Editing",
+    "Instagram Reels",
+    "Creative Agency",
+    "Agra Media Company",
+  ],
+
+  authors: [
+    {
+      name: "AT Media Productions",
+      url: "https://www.atmediaproductions.com",
+    },
+  ],
+
+  creator: "AT Media Productions",
+  publisher: "AT Media Productions",
+
+  category: "Media Production",
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  alternates: {
+    canonical: "https://www.atmediaproductions.com",
+  },
+
+  openGraph: {
+    title: "AT Media Productions | Captivating Content Creation",
+    description:
+      "Premium video production, photography, podcast production, branding, and social media content that helps businesses stand out.",
+    url: "https://www.atmediaproductions.com",
+    siteName: "AT Media Productions",
+    images: [
+      {
+        url: "/og-image.png", // Recommended: 1200x630 image
+        width: 1200,
+        height: 630,
+        alt: "AT Media Productions",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "AT Media Productions | Captivating Content Creation",
+    description:
+      "Premium video production, photography, podcast production, branding, and content creation.",
+    images: ["/og-image.png"],
+    creator: "@yourtwitterhandle", // Optional
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+
+  manifest: "/site.webmanifest",
+
+  verification: {
+    google: "YOUR_GOOGLE_VERIFICATION_CODE",
+  },
+
+  other: {
+    "theme-color": "#000000",
+  },
+};
 
 
 
